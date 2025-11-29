@@ -23,18 +23,22 @@
       background-color: #e3dff1;
       color: #3a2d2d;
       line-height: 1.6;
+      
     }
 
    
     h1 {
-      font-family: "Oswald", sans-serif;
+      font-family: "Berlin Demi FB", sans-serif;
       font-weight: 700;
-      font-size: 2.5em;
-      text-align: center;
-      color: #3a2d2d;
+      font-size: 85px;
+      text-align: left;
+      color: red;
       letter-spacing: 1px;
-      margin-top: 0;
-   
+     
+       margin-left: 100px;
+     
+      padding-block: 20px
+
     }
 
     h2 {
@@ -53,16 +57,22 @@
       margin-top: 20px;
       color: #4e3c3c;
       text-transform: uppercase;
+      
     }
 
     p {
-      margin-bottom: 1.2em;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 15px;
+       
     }
 
     img {
-      padding: 20%;
+      margin: 10%;
       width: 60%;
+   
     }
+    
+   
 
 .topnav {
   background-color: maroon;
@@ -79,6 +89,8 @@
 }
 
 .topnav a:hover {
+  float: right;
+  
   background-color: red;
   color: red;
 }
@@ -87,22 +99,117 @@
   background-color: red;
   color: white;
 }
+    
+
+.container {
+ width: 100%; 
+
+  
+  
+}
+    
+.grid-container {
+  display: grid; 
+   grid-template-areas: "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 3fr 1fr;
+ 
+ 
+  gap: 10px;
+  
+  width: 100%; 
+
+
+}
+
+.grid-item {
+  
+ 
+  display: flex; 
+ 
+  align-items: left; 
+  font-size: 1.5em; 
+}
+    
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    
   </style>
 </head>
    <div class="topnav">
     
   <a href="#contact">Contact</a>
+     
   <a href="#about">About</a>
   <a href="#gallery">Gallery</a>
   <a class="active" href="#home">Home</a>
+     
  
+  <div class="topnav a:hover">
+      <p>LLE LIM </p>
+  </div>
+     
+     <iframe></iframe>
 </div> 
+  
+ 
 
 <body>
-   <img src="IMG_1747_edited_edited.jpg" alt="elle">
-
-
-
   
+   <div class="container">
+   <img src="IMG_1747_edited_edited.jpg" alt="elle">
+  <div class="centered"> <h1>
+    ELLE LIM
+    </h1></div>
+  </div>
+  
+ <div class="container">
+     
+  <h1>Welcome to my Portfolio</h1>
+   
+  <p>
+    Hello, I'm , and this is my portfolio. Stick around and check out what I'm working on. Feel free to contact me and let’s work together. :)
+  </p>
+  </div>
+  
+   <div class="grid-container">
+  <div class="grid-item">
+      <img src="ec1cd8_d459de99bd634e088211158e44421807~mv2.avif" alt="elle">
+     
+     </div>
+  <div class="grid-item">
+    <h2>TITLE OF THING</h2>
+      <p>
+          Duck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generally er.
+        </p>
+     
+     </div>
+      <div class="grid-item"> 
+    
+    <img src="IMG_4752.jpeg" alt="elle">  </div>
+  <div class="grid-item">
+     <h2>TITLE OF THING</h2>
+      <p>
+          Duck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generally er.
+        </p>
+     </div>
+ 
+  <div class="grid-item">
+    <img src="IMG_4753.jpeg" alt="elle">  </div>
+  <div class="grid-item">
+     <h2>TITLE OF THING</h2>
+    <p>
+        Duck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generally er.
+    </p>
+     
+     </div>
+ 
+</div>
+
 </body>
 </html>
