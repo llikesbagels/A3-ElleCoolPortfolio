@@ -17,63 +17,50 @@
   <style>
   
  
-    body {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      background-color: #e3dff1;
-      color: #3a2d2d;
-      line-height: 1.6;
-      
-    }
+/* ---------- GENERAL ---------- */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: #e3dff1;
+  color: #3a2d2d;
+  line-height: 1.6;
+  margin: 0;
+}
 
-   
-    h1 {
-      font-family: "Berlin Demi FB", sans-serif;
-      font-weight: 700;
-      font-size: 85px;
-      text-align: left;
-      color: red;
-      letter-spacing: 1px;
-     
-       margin-left: 100px;
-     
-      padding-block: 20px
+h1 {
+  font-family: "Berlin Demi FB", sans-serif;
+  font-weight: 700;
+  font-size: 85px;
+  text-align: left;
+  color: red;
+  letter-spacing: 1px;
+  margin-left: 100px;
+  padding-block: 20px;
+}
 
-    }
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 550;
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #6b4c4c;
+}
 
-    h2 {
-      font-family: "Raleway", sans-serif;
-      font-weight: 550;
-      font-size: 1.5em;
-       margin-top: 10px;
-      color: #6b4c4c;
-     
-    }
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #4e3c3c;
+  text-transform: uppercase;
+}
 
-    h3 {
-      font-family: "Oswald", sans-serif;
-      font-weight: 500;
-      font-size: 1.2em;
-      margin-top: 20px;
-      color: #4e3c3c;
-      text-transform: uppercase;
-      
-    }
+p {
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+}
 
-    p {
-    font-family: "Times New Roman", sans-serif;
-    font-size: 15px;
-       
-    }
-
-    img {
-      margin: 10%;
-      width: 60%;
-   
-    }
-    
-   
-
+/* ---------- NAVIGATION ---------- */
 .topnav {
   background-color: maroon;
   overflow: hidden;
@@ -89,63 +76,57 @@
 }
 
 .topnav a:hover {
-  float: right;
-  
   background-color: red;
-  color: red;
+  color: white;
 }
 
 .topnav a.active {
   background-color: red;
   color: white;
 }
-    
 
+/* ---------- LAYOUT ---------- */
 .container {
- width: 100%; 
-
-  
-  
-}
-    
-.grid-container {
-  display: grid; 
-   grid-template-areas: "header header"
-    "menu content"
-    "footer footer";
-  grid-template-columns: 3fr 1fr;
- 
- 
-  gap: 10px;
-  
-  width: 100%; 
-
-
+  width: 100%;
+  position: relative;
 }
 
-.grid-item {
+img {
+  margin: 15%;
+  width: 60%;
+  border-radius: 8px;
   
- 
-  display: flex; 
- 
-  align-items: left; 
-  font-size: 1.5em; 
 }
-    
-    .centered {
+
+.centered {
   position: absolute;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-    
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 1.2em;
+}
+
   </style>
 </head>
    <div class="topnav">
     
   <a href="#contact">Contact</a>
      
-  <a href="#about">About</a>
+  <a href="about">About</a>
   <a href="#gallery">Gallery</a>
   <a class="active" href="#home">Home</a>
      
@@ -154,7 +135,7 @@
       <p>LLE LIM </p>
   </div>
      
-     <iframe></iframe>
+
 </div> 
   
  
