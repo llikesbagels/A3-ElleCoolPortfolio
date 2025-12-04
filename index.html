@@ -25,12 +25,26 @@
   font-weight: 400;
   font-style: normal;
 }
+    
+    content{
+      width: 1200px;
+      align-content: center;
+    }
 body {
+  
     margin: 0;
     font-family: Nunito, sans-serif;
  
    background-color: #e3dff1;
 }
+
+    
+      h1{
+      
+         font-family: "Momo Trust Display", sans-serif;
+      text-align: center;
+      font-size: 160px;
+    }
 
     h2{
        font-family: "Momo Trust Display", sans-serif;
@@ -43,25 +57,54 @@ body {
       text-align: left;
       font-size: 30px;
     }
+    
+    h4{
+        font-family: "Momo Trust Display", sans-serif;
+      text-align: left;
+      font-size: 90px;
+     
+    }
     p{
       margin: 10px;
     }
+
+
 nav {
-    background-color: #8b0000;
-    padding: 15px;
-    text-align: right;
+  font-family: "Momo Trust Display", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   background-color: #8b0000;
 }
-
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
 nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+nav a#logo {
+  color: #ffffff;
+  font-weight: 700;
+}
+nav ul a {
+  color: #ffffff;
+  font-weight: 600;
 }
 
-nav a:hover {
-    color: #ffcccc;
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
+
+
+
+
+
+
 
 .hero-container {
     position: relative;
@@ -76,11 +119,12 @@ nav a:hover {
 
 .hero-text {
     position: absolute;
-    top: 50%;
+   width: 100%;
+  top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: red;
-    font-size: 140px;
+  
    
     text-align: center;
 }
@@ -152,11 +196,7 @@ footer {
     margin-top: 30px;
 }
     
-    h1{ font-family: "Berlin Demi FB", sans-serif;
-      
-      
-    }
-
+  
 </style>
 
 </head>
@@ -166,16 +206,34 @@ footer {
 <!-- NAVIGATION BAR -->
 <nav>
   
-  <a href="index.html">Home</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
+  <a href="#home" id="logo">
+     <img src="Untitled drawing(2).png" alt="elle" style="width:80px;height:80;">
+     </a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+         
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
 </nav>
 
 <!-- BIG PICTURE WITH TEXT ON TOP -->
 <div class="hero-container">
     <img src="IMG_1747_edited_edited.jpg" alt="elle">
-    <div class="hero-text">ELLE LIM</div>
+    <div class="hero-text"><h1>
+      ★ELLE LIM★
+      </h1>
+  </div>
 </div>
 
 <!-- CAPTION UNDER THE HERO IMAGE -->
@@ -197,9 +255,9 @@ footer {
   </div>
  </div>
   
-<div> <h2>
-  MY PROJECTS
-  </h2></div>
+<div> <h4>
+ ★ MY PROJECTS ★
+  </h4></div>
 
 <!-- GRID SECTION -->
 <div class="grid-container">
@@ -258,14 +316,15 @@ made on a 18 x 24 sheet of mylar plastic with graphite pencil, coloured pencils 
 
 This project was a real chance to prove that I know what I'm doing in regards to realism and detail. Working with mylar is really mean, it smears like crazy and trying to erase more moves what you're trying to erase than actually erasing it. I loved working with the new material though, it was super smooth and softer graphite really do glide across it like butter
 
-​</p>
+</p>
     </div>
 
 </div>
 
 <!-- FOOTER -->
 <footer>
- <p></p>
+ <p>Contact
+ </p>
 </footer>
 
 </body>
