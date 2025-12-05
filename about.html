@@ -98,40 +98,16 @@ section#home {
       padding: 20px;
     }
 
-  
-
-.hero-container {
-    position: relative;
-    width: 100%;
-}
-
-.hero-container img {
-  padding: 20%;
-    width: 60%;
-    display: block;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: red;
-    font-size: 140px;
-   
-    text-align: center;
-}
 
 .caption {
    margin: 30px; 
    
     font-size: 20px;
-    
    
    background-color: #e3dff1;
   
 }
-
+/* grid container 1 is for the top section and grid container 2 is for the one under it */
 .grid-container {
     display: grid;
    grid-template-columns: 60% 40%;
@@ -139,6 +115,20 @@ section#home {
     padding: 30px;
   
 }
+
+   /* Images */
+.grid-item img {
+    width: 100%;
+   
+}
+
+/* Caption next to images */
+.grid-item p {
+    font-size: 18px;
+     
+  margin: 40px;
+}
+   
     .grid-container2 {
     display: grid;
    grid-template-columns: 40% 60%;
@@ -158,18 +148,7 @@ section#home {
     font-size: 18px;
     
 }
-/* Images */
-.grid-item img {
-    width: 100%;
-   
-}
 
-/* Caption next to images */
-.grid-item p {
-    font-size: 18px;
-     
-  margin: 40px;
-}
 
 footer {
     text-align: center;
