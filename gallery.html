@@ -1,36 +1,192 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>About – Elle's Portfolio</title>
-<link rel="stylesheet" href="style.css">
+ 
+  <!-- Elle Lim #21145637 10/27/2025 -->
   
- <style> 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+  <meta charset="UTF-8">
+
+  <title>Elle's Cool Portfolio</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Momo+Trust+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <style>
+    
+    .momo-trust-display-regular {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+    
+    content{
+      width: 1200px;
+      align-content: center;
+    }
+    
+    
+  #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+    
+  
+body {
+   background-color: #e3dff1;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+ 
+   
+}
+nav {
+  font-family: "Momo Trust Display", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   background-color: #8b0000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+nav a#logo {
+  color: #ffffff;
+  font-weight: 700;
+}
+nav ul a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+
+    
+      h1{
+       text-align: center;
+       font-family: "Momo Trust Display", sans-serif;
+    padding: 0px;
+      font-size: 100px;
+      color: rgb(229,14,13);
+    }
 
     h2{
+       font-family: "Momo Trust Display", sans-serif;
+      text-align: left;
       font-size: 50px;
+      margin: 40px;
+   
     }
-nav {
-    background-color: #8b0000;
-    padding: 15px;
-    text-align: right;
-}
+    
+      h3{
+       font-family: "Momo Trust Display", sans-serif;
+        margin: 20px;
+      text-align: left;
+      font-size: 40px;
+       color: rgb(190,14,28);
+    }
+    p{
+      margin: 10px;
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-}
 
-nav a:hover {
-    color: #ffcccc;
-}
 
 .hero-container {
     position: relative;
@@ -49,53 +205,59 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: red;
-    font-size: 70px;
+    font-size: 140px;
    
     text-align: center;
 }
 
 .caption {
-    text-align: center;
-    padding: 10px 20px;
+   margin: 30px; 
+   
     font-size: 20px;
-    color: #444;
+    
+   
+   background-color: #e3dff1;
+  
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    padding: 30px;
+   grid-template-columns: 25% 25% 25% 25%;
+   gap: 10px;
+    padding: 10px;
+  
 }
-
-/* Each grid item */
-.grid-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Images */
-.grid-item img {
+  
+   .grid-item img {
     width: 100%;
-    border-radius: 8px;
+   
+} 
+    
+   
+
+    .grid-item {
+      padding: 10px;
+    background-color: white;
+    
 }
+
 
 /* Caption next to images */
 .grid-item p {
     font-size: 18px;
-    color: #333;
+     
+  margin: 40px;
 }
 
-/* ------- FOOTER ------- */
 footer {
     text-align: center;
     background-color: #8b0000;
     color: white;
     padding: 20px;
     margin-top: 30px;
-} 
-
+}
+    
+  
 </style>
 
 </head>
@@ -103,29 +265,132 @@ footer {
 <body>
 
 <!-- NAVIGATION BAR -->
-<nav>
-   LLE LIM 
-  <a href="home.html">Home</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
+
+ <nav>
+  
+  <a href="#home" id="logo">
+     <img src="Untitled drawing(2).png" alt="elle" style="width:80px;height:80;">
+     </a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href=" https://llikesbagels.github.io/A3-ElleCoolPortfolio/">Home</a>
+          </li>
+          <li>
+            <a href="https://llikesbagels.github.io/about/">About</a>
+          </li>
+         
+          <li>
+            <a href="https://llikesbagels.github.io/gallery/">Gallery</a>
+          </li>
+          <li>
+            <a href="https://llikesbagels.github.io/exercise-8/">Contact</a>
+          </li>
+        </ul>
 </nav>
 
+  
+  
+ <h1>★ GALLERY ★</h1>
+  
+ 
 
 
-<!-- CAPTION UNDER THE HERO IMAGE -->
-<div class="caption"> 
-    <h2>ABOUT ME</h2>
-    <p>Im lonely and sad </p>
+
+  <h2>Digital</h2>
+  <div class="grid-container">
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage.jpg" alt="Traditional Art 1">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage2.jpg" alt="Traditional Art 2">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="Sora.png" alt="Traditional Art 3">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="IMG_4753.jpeg"  alt="Elle Icon">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage4.png" alt="Elle Icon">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="furry.png" alt="Elle Icon">
+   </div>
+   
 </div>
 
+ 
+  
+  
+   <h2>Traditional</h2>
+ <div class="grid-container">
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage.jpg" alt="Traditional Art 1">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage2.jpg" alt="Traditional Art 2">
+   </div>
+    
+    <div class="grid-item">
+      
+  <img class="clickable-img" src="IMG_4752.jpeg" alt="Traditional Art 3"> 
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage6.png" alt="Elle Icon">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage4.png" alt="Elle Icon">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage3.jpg" alt="Elle Icon">
+   </div>
+   
+    <div class="grid-item"><img class="clickable-img" src="goodimage5.jpg" alt="Elle Icon">
+   </div>
+   
+</div>
+   
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+   
+<script>
+const modal = document.getElementById("myModal");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
+const images = document.querySelectorAll(".clickable-img");
+const closeBtn = document.querySelector(".close");
 
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    });
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
 
 <!-- FOOTER -->
 <footer>
-    © 2025 Your Name — All Rights Reserved
+ <p> 2025 Elle Lim. All rights reserved.<br>
+  <a href=" https://www.youtube.com/@sledgiehamham3658?si=O_ntIds7rAXYVrAy">Youtube </a>
+   &nbsp;&nbsp;
+    <a href="elleYlim62@gmail.com">Email</a>
+   &nbsp;&nbsp;
+   <a href="  https://www.youtube.com/@sledgiehamham3658?si=O_ntIds7rAXYVrAy">Instagram</a> 
+   &nbsp;&nbsp;
+   <a href=" https://www.linkedin.com/in/elle-lim-6200a8348">LinkedIn</a>
+  
+  </p>
 </footer>
-
 </body>
 </html>
 
