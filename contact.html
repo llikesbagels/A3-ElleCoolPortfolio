@@ -74,13 +74,14 @@ section#home {
       
        font-family: "Momo Trust Display", sans-serif;
     padding: 0px;
-      font-size: 50px;
-      color: rgb(190,14,28);
+      font-size: 90px;
+      color: rgb(220,14,14);
+        text-align: center;
     }
 
     h2{
        font-family: "Momo Trust Display", sans-serif;
-      text-align: left;
+      text-align: center;
       font-size: 50px;
    
     }
@@ -94,6 +95,7 @@ section#home {
     }
     p{
       margin: 10px;
+      padding: 20px;
     }
 
 .caption {
@@ -106,7 +108,7 @@ section#home {
     display: grid;
    grid-template-columns: 50% 50%;
    gap: 20px;
-    padding: 30px;
+  margin-right: 50px;
   
   
 }
@@ -122,15 +124,24 @@ section#home {
    .grid-item {
     width: 100%;
      background-color: #e3dff1;
+     padding: 10px;
+  
+    
 } 
     
    
  .grid-item p {
-   background-color: white;
+    margin-left: 20px;
     font-size: 18px;
    
     }
+input[type=text] {
 
+  width: 80%;
+  padding: 12px;
+  margin: 20px 20px;
+  box-sizing: border-box;
+}
 
 
 /* Caption next to images */
@@ -141,7 +152,7 @@ footer {
     background-color: #8b0000;
     color: white;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
     
   
@@ -176,7 +187,7 @@ footer {
 
 
 
-
+<h1>★ CONTACT ★</h1>
   
 <div class="caption">
  
@@ -185,18 +196,29 @@ footer {
   
     <div class="grid-item"> 
     
-       <h3>★ CONTACT ME ★</h3>
-    <p>Duck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generallyDuck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generallyDuck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generally
-      
+       <h2>★ CONTACT ME ★</h2>
+    <p>Email me with any questions or inquiries. I would be happy to answer questions or set up a meeting. Feel free to reach out!
+  </p>
+   
   
-  </p></div>
+     
+        </div>
     <div class="grid-item"> 
-     <p>NAME</p>
-     <p>Email Address</p>
-     <p>Message Me</p>
-    
+ <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+ &nbsp;&nbsp;&nbsp;&nbsp;Name:<br>
+<input type="text" name="name"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;E-mail:<br>
+<input type="text" name="mail"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
  </div>
    </div>
+  <h2>
+       ★ SOCIAL MEDIA ★
+     </h2>
    <div class="grid-container2">
       <div class="grid-item2"> 
      <a href="https://ko-fi.com/ellimnate"><img src="6vh0hh4TMNxIAIOvXllrmWKEizL+y7LPCXjuxei5ad+LNpm8BxnMZl3Thw3sA+0l9ozIE098VX6RgpRPZ1Cm2oYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYBsxfjw+FNx35KLIAAAAASUVORK5CYII=(1).png" alt="Kofi" style="width:150px;height:150px;"></a>
@@ -243,4 +265,3 @@ footer {
 </footer>
 </body>
 </html>
-
