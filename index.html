@@ -285,6 +285,92 @@ footer {
   display: table;
   clear: both;
 }
+
+ #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 25px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.3s;
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
     
   
 </style>
@@ -360,7 +446,7 @@ footer {
 <div class="grid-container">
    
     <!-- 1st grid item (IMAGE) -->
-    <div class="grid-item">
+    <div class="grid-item"><img class="clickable-img"
           <img src="ec1cd8_d459de99bd634e088211158e44421807~mv2.avif" alt="elle">
       
     </div>
@@ -385,91 +471,59 @@ I've always wanted to create an original graphic novel and or series since I was
 
 <div class="row">
   <div class="column" style="background-color: white;">
-     <div class="grid-item">
-    <img src="202Elle2.png" alt="elle">
+     <div class="grid-item"><img class="clickable-img"
+    <img src="202Elle1.png" alt="elle">
     </div>
   </div>
   
   <div class="column" style="background-color:white ;">
-<div class="grid-item">
-        <img src="202Elle3.png" alt="elle">
+<div class="grid-item"><img class="clickable-img"
+        <img src="202Elle2.png" alt="elle">
         </div>
   </div>
 
   <div class="column" style="background-color:white;">
-   <div class="grid-item">
+   <div class="grid-item"><img class="clickable-img"
         <img src="202Elle3.png" alt="elle">
         </div>
   </div>
 
   <div class="column" style="background-color: white;">
-  <div class="grid-item">
-        <img src="202Elle3.png" alt="elle">
+  <div class="grid-item"><img class="clickable-img"
+        <img src="Part_3_ElleLim-4.png" alt="elle">
         </div>
   </div>
 </div>
 
 <div class="grid-container"> 
-      <div class="grid-item">
-      
     
-      <h2>Poster Series</h2>
-        <h3>"What is Good Design"</h3>
-      
-<p>
-8x11 Personal Photography Posters, made using Photoshop,
-
-When creating this drawing, I focused a lot on using gradient maps to colour Crunk. It was an interesting learning experience, I had never started colouring in only grayscale before and even though I still don't prefer it, I did enjoy learning how it made me think harder about value shading.
-      </p>
-    </div>
-
-    <!-- 5th grid item (IMAGE) -->
-    <div class="grid-item">
-           <img src="202Elle2.png" alt="elle">  </div>
-  
-  
  
 
     <div class="grid-item">
-      
-      <h2>BEAR CHARACTER SHEET</h2>
-        <h3>"Crunk the Bear"</h3>
-      
-<p>
-Digital Character Sheet, made using Photoshop,
-
-When creating this drawing, I focused a lot on using gradient maps to colour Crunk. It was an interesting learning experience, I had never started colouring in only grayscale before and even though I still don't prefer it, I did enjoy learning how it made me think harder about value shading.
-      </p>
+    put something here
+     
     </div>
 
     <!-- 5th grid item (IMAGE) -->
-    <div class="grid-item">
+    <div class="grid-item"><img class="clickable-img"
            <img src="IMG_4752.jpeg" alt="elle">  </div>
   
   
- 
-
-    <div class="grid-item">
-      
-      <h2>BEAR CHARACTER SHEET</h2>
-        <h3>"Crunk the Bear"</h3>
-      
-<p>
-Digital Character Sheet, made using Photoshop,
-
-When creating this drawing, I focused a lot on using gradient maps to colour Crunk. It was an interesting learning experience, I had never started colouring in only grayscale before and even though I still don't prefer it, I did enjoy learning how it made me think harder about value shading.
-      </p>
-    </div>
-
-    <!-- 5th grid item (IMAGE) -->
-    <div class="grid-item">
-           <img src="IMG_4752.jpeg" alt="elle">  </div>
-  
-  <div class="grid-item">
+ <div class="grid-item"><img class="clickable-img"
              <img src="IMG_4753.jpeg" alt="elle"> </div>
   <div class="grid-item">
-<h2>
-MYLAR ILLUSTRATION</h2>
+ <h2>BEAR CHARACTER SHEET</h2>
+        <h3>"Crunk the Bear"</h3>
+      
+<p>
+Digital Character Sheet, made using Photoshop,
+
+When creating this drawing, I focused a lot on using gradient maps to colour Crunk. It was an interesting learning experience, I had never started colouring in only grayscale before and even though I still don't prefer it, I did enjoy learning how it made me think harder about value shading.
+      </p>
+    </div>
+
+    <div class="grid-item">
+   <h2>  MYLAR ILLUSTRATION</h2>
   <h3>"Maria"</h3>      <p>
 
 Abstract Mixed Media Artwork
@@ -479,12 +533,43 @@ made on a 18 x 24 sheet of mylar plastic with graphite pencil, coloured pencils 
 ​
 
 This project was a real chance to prove that I know what I'm doing in regards to realism and detail. Working with mylar is really mean, it smears like crazy and trying to erase more moves what you're trying to erase than actually erasing it. I loved working with the new material though, it was super smooth and softer graphite really do glide across it like butter
-
-</p>
+      </p>
     </div>
+
+    <!-- 5th grid item (IMAGE) -->
+    <div class="grid-item"><img class="clickable-img"
+           <img src="IMG_4752.jpeg" alt="elle">  </div>
+  
+  
 
 </div>
 
+ <!-- The Modal for clickable images, I got it from w3-->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01" alt="e">
+    <div id="caption"></div>
+</div>
+
+<script>
+const modal = document.getElementById("myModal");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
+const images = document.querySelectorAll(".clickable-img");
+const closeBtn = document.querySelector(".close");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    });
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
 <footer>
  <p> 2025 Elle Lim. All rights reserved.<br>
   <a href=" https://www.youtube.com/@sledgiehamham3658?si=O_ntIds7rAXYVrAy">Youtube </a>
